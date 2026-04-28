@@ -24,6 +24,7 @@
 ## Pendiente
 
 ### 🔴 Alta
+- [ ] **Campaña pasta a domicilio** · material recibido de Carmen (fotos + creatividades) · pendiente cerrar detalles con Pietta antes de subir a web · landing + copy + SEO
 - [ ] Actualizar email en páginas legales · páginas publicadas · Pietta confirma email → se actualiza el contenido
 - [ ] Feed Instagram · Carmen conecta OAuth · después configurar layout e insertar en home
 - [ ] **Alérgenos (prioritario mayo)** · incluir alérgenos en todos los platos de la carta · pendiente definir formato y platos afectados con Bea/Gennaro
