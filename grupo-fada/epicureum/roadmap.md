@@ -18,7 +18,7 @@
 ## Pendiente
 
 ### 🔴 Alta
-- [ ] **[BEA] Autorizar Instagram feed** via Facebook Business Manager → insertar shortcode en home (Bricks)
+- [ ] **[CARMEN] Autorizar Instagram feed** via Facebook Business Manager → insertar shortcode en home (Bricks)
 - [ ] Actualizar ASE Pro de v7.5.1 a v8.4.0 (desactualizado respecto a Burbu y Gigi)
 
 ### 🟡 Media

@@ -16,7 +16,7 @@
 ## En curso
 
 - Pizza/pasta del mes mayo · borradores listos · pendiente: imagen destacada + ACF + bloque home · **publicar 2026-05-01**
-- Feed Instagram · Smash Balloon activo · pendiente: conectar cuenta @pietta.ristorante vía OAuth
+- Feed Instagram · Smash Balloon activo · pendiente: Carmen conecta cuenta @pietta.ristorante vía OAuth
 - Páginas legales · contenido real añadido · **pendiente: Bea confirma email de contacto oficial → publicar**
 
 ---
@@ -25,7 +25,7 @@
 
 ### 🔴 Alta
 - [ ] Publicar páginas legales · falta email de contacto oficial → Bea confirma → se publican
-- [ ] Feed Instagram · configurar layout + insertar en home · desbloqueado tras conexión OAuth
+- [ ] Feed Instagram · Carmen conecta OAuth · después configurar layout e insertar en home
 - [ ] **Alérgenos (prioritario mayo)** · incluir alérgenos en todos los platos de la carta · pendiente definir formato y platos afectados con Bea/Gennaro
 
 ### 🟡 Media

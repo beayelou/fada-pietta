@@ -13,14 +13,14 @@
 
 ## En curso
 
-- Feed de Instagram · plugin instalado · **bloqueado: Bea debe autorizar la cuenta @solastacatering via Facebook Business Manager**
+- Feed de Instagram · plugin instalado · **bloqueado: Carmen debe autorizar la cuenta @solastacatering via Facebook Business Manager**
 
 ---
 
 ## Pendiente
 
 ### 🔴 Alta
-- [ ] **[BEA] Autorizar Instagram feed** via Facebook Business Manager → insertar shortcode en home y/o galería (Elementor)
+- [ ] **[CARMEN] Autorizar Instagram feed** via Facebook Business Manager → insertar shortcode en home y/o galería (Elementor)
 - [ ] Confirmar plugin SEO: Rank Math está activo · ¿verificar que está bien configurado?
 
 ### 🟡 Media
