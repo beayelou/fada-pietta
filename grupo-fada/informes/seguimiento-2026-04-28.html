@@ -17,7 +17,6 @@
       margin: 0 auto;
     }
 
-    /* HEADER */
     header {
       border-bottom: 2px solid #1a1a1a;
       padding-bottom: 20px;
@@ -45,10 +44,7 @@
       line-height: 1.8;
     }
 
-    /* SECTION */
-    section {
-      margin-bottom: 40px;
-    }
+    section { margin-bottom: 40px; }
     section > h2 {
       font-size: 10px;
       font-weight: normal;
@@ -60,7 +56,6 @@
       margin-bottom: 18px;
     }
 
-    /* MARCA HEADER */
     .marca-header {
       display: flex;
       align-items: baseline;
@@ -93,18 +88,16 @@
     }
     .badge-ok     { background: #e8f4ec; color: #2d6a4f; }
     .badge-alerta { background: #fdf3d6; color: #9a7200; }
-    .badge-critico { background: #fff0f0; color: #8b0000; }
 
-    /* CARDS */
     .card {
       border-left: 3px solid #ccc;
       padding: 10px 14px;
       margin-bottom: 10px;
       background: #fafafa;
     }
-    .card.done    { border-color: #2d6a4f; background: #f0f7f4; }
-    .card.active  { border-color: #b5451b; background: #fdf5f2; }
-    .card.critico { border-color: #8b0000; background: #fff0f0; }
+    .card.done   { border-color: #2d6a4f; background: #f0f7f4; }
+    .card.active { border-color: #b5451b; background: #fdf5f2; }
+    .card.block  { border-color: #999;    background: #f5f5f5; }
 
     .card .tag {
       font-size: 9px;
@@ -113,16 +106,14 @@
       letter-spacing: 0.1em;
       margin-bottom: 5px;
     }
-    .card.done    .tag { color: #2d6a4f; }
-    .card.active  .tag { color: #b5451b; }
-    .card.critico .tag { color: #8b0000; }
+    .card.done   .tag { color: #2d6a4f; }
+    .card.active .tag { color: #b5451b; }
+    .card.block  .tag { color: #999; }
 
     .card h4 { font-size: 13px; font-weight: bold; margin-bottom: 3px; }
     .card p  { font-size: 12px; color: #444; line-height: 1.5; margin-top: 3px; }
-    .card .note { font-size: 11px; color: #b5451b; margin-top: 5px; font-weight: bold; }
     .card .date { font-size: 10px; color: #888; margin-top: 5px; }
 
-    /* SHARED CARDS (todas las marcas) */
     .shared-card {
       border-left: 3px solid #2d6a4f;
       padding: 10px 14px;
@@ -134,7 +125,6 @@
     .shared-card p  { font-size: 12px; color: #444; line-height: 1.5; }
     .shared-card .date { font-size: 10px; color: #888; margin-top: 5px; }
 
-    /* PENDING TABLE */
     .pending-list {
       width: 100%;
       border-collapse: collapse;
@@ -173,25 +163,23 @@
       border-radius: 2px;
       white-space: nowrap;
     }
-    .prio.critica { background: #fff0f0; color: #8b0000; }
-    .prio.alta    { background: #fde8e0; color: #b5451b; }
-    .prio.media   { background: #fdf3d6; color: #9a7200; }
-    .prio.baja    { background: #e8f4ec; color: #2d6a4f; }
+    .prio.alta  { background: #fde8e0; color: #b5451b; }
+    .prio.media { background: #fdf3d6; color: #9a7200; }
+    .prio.baja  { background: #e8f4ec; color: #2d6a4f; }
 
-    /* DIVIDER */
     hr.marca-sep {
       border: none;
       border-top: 1px dashed #ddd;
       margin: 28px 0 0 0;
     }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid #e0e0e0;
       margin-top: 48px;
       padding-top: 16px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-size: 10px;
       color: #aaa;
     }
@@ -199,13 +187,11 @@
     @media print {
       body { padding: 32px 40px; }
       .card, .shared-card { break-inside: avoid; }
-      .marca-header { break-before: auto; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div>
       <h1>Grupo Fadá Granada</h1>
@@ -218,21 +204,21 @@
   </header>
 
 
-  <!-- ACCIONES COMUNES A LAS 4 WEBS -->
+  <!-- ACCIONES COMUNES -->
   <section>
     <h2>Acciones realizadas — todas las marcas</h2>
 
     <div class="shared-card">
       <div class="tag">Completado · 4 webs</div>
       <h4>Auditoría completa de plugins</h4>
-      <p>Revisión de todos los plugins instalados en Burbu (14), Epicureum (16), Gigi (19) y Solasta (17). Verificación de versiones, estado activo/inactivo y detección de conflictos. Detectadas dos incidencias que requieren acción (ver marcas correspondientes).</p>
+      <p>Revisión de todos los plugins instalados en Burbu (14), Epicureum (16), Gigi (19) y Solasta (17). Verificación de versiones, estado activo/inactivo y detección de conflictos. Resultado: Gigi tenía dos plugins SEO activos simultáneamente — resuelto en esta sesión.</p>
       <div class="date">28 abr 2026</div>
     </div>
 
     <div class="shared-card">
       <div class="tag">Completado · 4 webs</div>
       <h4>Smash Balloon Instagram Feed instalado</h4>
-      <p>Plugin v6.10.1 instalado y activado en Burbu, Epicureum, Gigi y Solasta. Pendiente en cada web: autorizar la cuenta de Instagram correspondiente vía OAuth (Facebook Business Manager) para completar la integración y mostrar el feed.</p>
+      <p>Plugin v6.10.1 instalado y activado en Burbu, Epicureum, Gigi y Solasta. Pendiente en cada web: Carmen (redes sociales) autoriza la cuenta de Instagram correspondiente vía OAuth en Facebook Business Manager para completar la integración.</p>
       <div class="date">28 abr 2026</div>
     </div>
 
@@ -256,10 +242,10 @@
       <p>Correctas y publicadas: /aviso-legal/, /cookies/, /privacidad/. Sin acción necesaria.</p>
     </div>
 
-    <div class="card active">
-      <div class="tag">Bloqueado · Requiere Bea</div>
+    <div class="card block">
+      <div class="tag">Bloqueado · Pendiente Carmen</div>
       <h4>Feed de Instagram</h4>
-      <p>Plugin instalado. Pendiente autorizar @burbu.sushi en WP → Ajustes → Instagram Feed → Connect an Instagram Account. Después se inserta el shortcode en la home (Bricks, grid 3 col, 9 posts).</p>
+      <p>Plugin instalado. Carmen conecta @burbu.sushi en WP → Ajustes → Instagram Feed → Connect an Instagram Account. Después se inserta en la home con Bricks.</p>
     </div>
 
     <table class="pending-list">
@@ -268,7 +254,7 @@
         <tr>
           <td><strong>Autorizar + configurar feed IG</strong></td>
           <td><span class="prio alta">Alta</span></td>
-          <td>Bea conecta @burbu.sushi en WP. Después se configura e inserta en Bricks.</td>
+          <td>Carmen conecta @burbu.sushi en WP. Después se configura e inserta en Bricks.</td>
         </tr>
         <tr>
           <td>
@@ -279,17 +265,9 @@
           <td>Revisión autónoma en próxima sesión.</td>
         </tr>
         <tr>
-          <td>
-            <strong>Verificar Polylang</strong>
-            <small>Tiene /home-english/ pero sin arquitectura multilingüe clara.</small>
-          </td>
-          <td><span class="prio media">Media</span></td>
-          <td>Revisar configuración. Confirmar si la versión EN está activa.</td>
-        </tr>
-        <tr>
-          <td><strong>Revisar redundancia Schema Pro + Rank Math</strong></td>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
           <td><span class="prio baja">Baja</span></td>
-          <td>Ambos activos — posible markup duplicado. Revisar y desactivar Schema Pro si procede.</td>
+          <td>Invitar al agente en GA4 y GSC para informes mensuales.</td>
         </tr>
       </tbody>
     </table>
@@ -300,45 +278,36 @@
     <div class="marca-header">
       <h3>Epicureum</h3>
       <span>epicureum.com · @epicureum.brunch</span>
-      <span class="marca-badge badge-alerta">Acción pendiente</span>
+      <span class="marca-badge badge-ok">Resuelto</span>
     </div>
 
     <div class="card done">
       <div class="tag">Completado</div>
-      <h4>Páginas legales creadas — borradores en WP</h4>
-      <p>No existían. Creadas: /aviso-legal/ (ID:2173), /politica-de-privacidad/ (ID:2174), /politica-de-cookies/ (ID:2175). Estructura RGPD completa. Los campos [nombre legal, CIF, email] están marcados como [COMPLETAR] para que Bea los rellene antes de publicar.</p>
-      <p class="note">⚠ Los botones del footer no redirigen a ningún sitio. Publicar las páginas y actualizar las URLs en Bricks es obligatorio legalmente.</p>
+      <h4>Páginas legales — creadas y publicadas</h4>
+      <p>No existían. Creadas y publicadas con contenido RGPD completo: /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/. Datos: <strong>NEYOSSI, S.L. · CIF B19686526 · epicureum.cafe@gmail.com · C. Buensuceso 9, Granada</strong>.</p>
+      <div class="date">28 abr 2026</div>
     </div>
 
-    <div class="card active">
-      <div class="tag">Bloqueado · Requiere Bea</div>
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h4>Footer actualizado</h4>
+      <p>Crédito del diseñador eliminado. Los tres enlaces del footer (Política de privacidad, Política de cookies, Aviso legal) redirigen ahora correctamente a las páginas publicadas.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card block">
+      <div class="tag">Bloqueado · Pendiente Carmen</div>
       <h4>Feed de Instagram</h4>
-      <p>Plugin instalado. Pendiente autorizar @epicureum.brunch en WP → Ajustes → Instagram Feed → Connect an Instagram Account.</p>
+      <p>Plugin instalado. Carmen conecta @epicureum.brunch en WP → Ajustes → Instagram Feed → Connect an Instagram Account.</p>
     </div>
 
     <table class="pending-list">
       <thead><tr><th style="width:50%">Próximo paso</th><th style="width:15%">Prioridad</th><th>Qué se necesita</th></tr></thead>
       <tbody>
         <tr>
-          <td>
-            <strong>Completar y publicar páginas legales</strong>
-            <small>Borradores listos en WP → Páginas.</small>
-          </td>
-          <td><span class="prio alta">Alta</span></td>
-          <td>Bea facilita: nombre legal empresa + CIF + email. Se completan [COMPLETAR] y se publican.</td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Actualizar botones footer → URLs legales</strong>
-            <small>Requiere editor Bricks (asistido).</small>
-          </td>
-          <td><span class="prio alta">Alta</span></td>
-          <td>Una vez publicadas: Aviso Legal → /aviso-legal/ · Privacidad → /politica-de-privacidad/ · Cookies → /politica-de-cookies/</td>
-        </tr>
-        <tr>
           <td><strong>Autorizar + configurar feed IG</strong></td>
           <td><span class="prio alta">Alta</span></td>
-          <td>Bea conecta @epicureum.brunch en WP. Después se inserta shortcode en home (Bricks).</td>
+          <td>Carmen conecta @epicureum.brunch en WP. Después se inserta shortcode en home (Bricks).</td>
         </tr>
         <tr>
           <td>
@@ -346,15 +315,12 @@
             <small>Burbu y Gigi ya tienen la versión nueva.</small>
           </td>
           <td><span class="prio media">Media</span></td>
-          <td>Actualización de plugin. Backup previo con UpdraftPlus.</td>
+          <td>Actualización de plugin en próxima sesión de mantenimiento.</td>
         </tr>
         <tr>
-          <td>
-            <strong>Auditoría SEO multilingüe</strong>
-            <small>Web en 5 idiomas: ES, EN, DE, FR, AR.</small>
-          </td>
-          <td><span class="prio media">Media</span></td>
-          <td>Revisar meta titles, descriptions y hreflang en cada versión de idioma.</td>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Invitar al agente en GA4 y GSC.</td>
         </tr>
       </tbody>
     </table>
@@ -365,68 +331,43 @@
     <div class="marca-header">
       <h3>Gigi</h3>
       <span>gigibrunch.es · @gigibrunch</span>
-      <span class="marca-badge badge-critico">2 bloqueantes</span>
+      <span class="marca-badge badge-alerta">Acción pendiente</span>
     </div>
 
-    <div class="card critico">
-      <div class="tag">Crítico — Decisión urgente</div>
-      <h4>Doble plugin SEO activo: Rank Math + The SEO Framework</h4>
-      <p>Ambos generan meta tags simultáneamente — los buscadores reciben señales contradictorias. Puede estar afectando al posicionamiento actual. Recomendación: desactivar The SEO Framework y mantener Rank Math (alineado con el resto del grupo). <strong>Necesito confirmación de Bea antes de actuar.</strong></p>
+    <div class="card done">
+      <div class="tag">Resuelto</div>
+      <h4>Conflicto de plugins SEO — solucionado</h4>
+      <p>Gigi tenía dos plugins SEO activos simultáneamente (Rank Math + The SEO Framework), lo que genera señales contradictorias para los buscadores. <strong>Rank Math eliminado.</strong> The SEO Framework queda como plugin SEO oficial de Gigi.</p>
+      <div class="date">28 abr 2026</div>
     </div>
 
     <div class="card done">
       <div class="tag">Completado</div>
-      <h4>Páginas legales — contenido RGPD creado</h4>
-      <p>Existían pero estaban completamente vacías. Se ha añadido contenido completo adaptado a Gigi (dirección C. Mesones 50, email hola@gigibrunch.es). Quedan como borradores. Pendiente: completar [nombre legal, CIF] y publicar. Después añadir enlaces en el footer con Bricks.</p>
+      <h4>Páginas legales — creadas y publicadas</h4>
+      <p>Existían pero estaban completamente vacías. Actualizadas con contenido RGPD completo y publicadas: /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/. Datos: <strong>NEYOSSI, S.L. · CIF B19686526 · hola@gigibrunch.es · C. Mesones 50, Granada</strong>.</p>
+      <div class="date">28 abr 2026</div>
     </div>
 
-    <div class="card active">
-      <div class="tag">Bloqueado · Requiere Bea</div>
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h4>Menú header simplificado</h4>
+      <p>Eliminados los botones de Nosotros, Blog y Contacto del menú de navegación principal. El header queda limpio con solo Home, en línea con el enfoque de landing page de la web.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card block">
+      <div class="tag">Bloqueado · Pendiente Carmen</div>
       <h4>Feed de Instagram</h4>
-      <p>Plugin instalado. Pendiente autorizar @gigibrunch en WP → Ajustes → Instagram Feed → Connect an Instagram Account.</p>
+      <p>Plugin instalado. Carmen conecta @gigibrunch en WP → Ajustes → Instagram Feed → Connect an Instagram Account.</p>
     </div>
 
     <table class="pending-list">
       <thead><tr><th style="width:50%">Próximo paso</th><th style="width:15%">Prioridad</th><th>Qué se necesita</th></tr></thead>
       <tbody>
         <tr>
-          <td>
-            <strong>Resolver doble plugin SEO</strong>
-            <small>Rank Math + The SEO Framework activos.</small>
-          </td>
-          <td><span class="prio critica">Crítica</span></td>
-          <td>Bea confirma → se desactiva The SEO Framework en la siguiente sesión.</td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Completar y publicar páginas legales</strong>
-            <small>Borradores con contenido listos en WP.</small>
-          </td>
+          <td><strong>Autorizar + configurar feed IG</strong></td>
           <td><span class="prio alta">Alta</span></td>
-          <td>Bea facilita: nombre legal empresa + CIF. Después añadir enlaces en footer (Bricks).</td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Completar footer</strong>
-            <small>Actualmente incompleto — sensación de página inacabada.</small>
-          </td>
-          <td><span class="prio alta">Alta</span></td>
-          <td>Bea define qué incluye (propuesta: nombre, dirección, teléfono, horario, redes, enlaces legales). Se entrega copy y se edita en Bricks.</td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Autorizar + configurar feed IG</strong>
-          </td>
-          <td><span class="prio alta">Alta</span></td>
-          <td>Bea conecta @gigibrunch en WP. Después se inserta shortcode en Bricks.</td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Redirigir botones de navegación</strong>
-            <small>Blog, Nosotros, Contacto → páginas en privado.</small>
-          </td>
-          <td><span class="prio media">Media</span></td>
-          <td>Bea decide destino de cada botón (sección home, WhatsApp, etc.). Se actualiza en Bricks.</td>
+          <td>Carmen conecta @gigibrunch en WP. Después se inserta en home (Bricks).</td>
         </tr>
         <tr>
           <td>
@@ -434,7 +375,12 @@
             <small>v2.9.1.3 instalada — Epicureum tiene v3.2.5.</small>
           </td>
           <td><span class="prio media">Media</span></td>
-          <td>Actualización de plugin. Backup previo.</td>
+          <td>Actualización de plugin en próxima sesión. Backup previo.</td>
+        </tr>
+        <tr>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Invitar al agente en GA4 y GSC.</td>
         </tr>
       </tbody>
     </table>
@@ -455,15 +401,22 @@
     </div>
 
     <div class="card done">
-      <div class="tag">Verificado</div>
-      <h4>Blog activo — 17 artículos publicados</h4>
-      <p>Blog en buen estado. El post demo de WordPress ya no existe (eliminado previamente). Último artículo publicado: diciembre 2025 — 4 meses sin actividad. Con la temporada de bodas en curso, retomar la publicación mensual es prioritario.</p>
+      <div class="tag">Completado</div>
+      <h4>Comentarios del blog desactivados</h4>
+      <p>Desactivados globalmente en ajustes y actualizados los 17 posts existentes individualmente. El blog queda limpio y sin posibilidad de spam.</p>
+      <div class="date">28 abr 2026</div>
     </div>
 
-    <div class="card active">
-      <div class="tag">Bloqueado · Requiere Bea</div>
+    <div class="card done">
+      <div class="tag">Verificado</div>
+      <h4>Blog activo — 17 artículos publicados</h4>
+      <p>Blog en buen estado. Último artículo: diciembre 2025 — 4 meses sin actividad. Con la temporada de bodas en curso, retomar la publicación mensual es prioritario para el posicionamiento.</p>
+    </div>
+
+    <div class="card block">
+      <div class="tag">Bloqueado · Pendiente Carmen</div>
       <h4>Feed de Instagram</h4>
-      <p>Plugin instalado. Pendiente autorizar @solastacatering en WP → Ajustes → Instagram Feed → Connect an Instagram Account.</p>
+      <p>Plugin instalado. Carmen conecta @solastacatering en WP → Ajustes → Instagram Feed → Connect an Instagram Account.</p>
     </div>
 
     <table class="pending-list">
@@ -472,7 +425,7 @@
         <tr>
           <td><strong>Autorizar + configurar feed IG</strong></td>
           <td><span class="prio alta">Alta</span></td>
-          <td>Bea conecta @solastacatering en WP. Después se inserta en home + galería (Elementor).</td>
+          <td>Carmen conecta @solastacatering en WP. Después se inserta en home + galería (Elementor).</td>
         </tr>
         <tr>
           <td>
@@ -488,23 +441,12 @@
             <small>Borrador sin título desde noviembre 2025.</small>
           </td>
           <td><span class="prio media">Media</span></td>
-          <td>Bea revisa en WP → Entradas. Si está abandonado, eliminar.</td>
+          <td>Revisar en WP → Entradas. Si está abandonado, eliminar.</td>
         </tr>
         <tr>
-          <td>
-            <strong>Revisar /privacy-policy/ en inglés</strong>
-            <small>Draft en inglés — posible contenido abandonado.</small>
-          </td>
-          <td><span class="prio media">Media</span></td>
-          <td>Si no hay versión EN de la web, eliminar. Si hay intención, planificar.</td>
-        </tr>
-        <tr>
-          <td>
-            <strong>Eliminar Hostinger Easy Onboarding</strong>
-            <small>Plugin inactivo residual de la instalación inicial.</small>
-          </td>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
           <td><span class="prio baja">Baja</span></td>
-          <td>Desactivar y eliminar en próxima sesión de mantenimiento.</td>
+          <td>Invitar al agente en GA4 y GSC.</td>
         </tr>
       </tbody>
     </table>
@@ -512,53 +454,38 @@
   </section>
 
 
-  <!-- PENDIENTE COMÚN: DATOS NECESARIOS -->
+  <!-- PENDIENTE COMÚN -->
   <section>
-    <h2>Datos que necesito para continuar</h2>
+    <h2>Acción común pendiente — Instagram</h2>
 
     <table class="pending-list">
       <thead>
         <tr>
-          <th style="width:35%">Dato</th>
-          <th style="width:20%">Afecta a</th>
-          <th>Para qué</th>
+          <th style="width:25%">Web</th>
+          <th style="width:30%">Cuenta</th>
+          <th>Paso</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><strong>Nombre legal de la empresa / razón social</strong></td>
-          <td>Epicureum · Gigi</td>
-          <td>Completar el Aviso Legal y la Política de Privacidad (obligatorio RGPD).</td>
+          <td><strong>Burbu</strong></td>
+          <td>@burbu.sushi</td>
+          <td>Carmen: WP → Ajustes → Instagram Feed → Connect an Instagram Account</td>
         </tr>
         <tr>
-          <td><strong>CIF / NIF</strong></td>
-          <td>Epicureum · Gigi</td>
-          <td>Idem. Sin esto no se pueden publicar las páginas legales.</td>
+          <td><strong>Epicureum</strong></td>
+          <td>@epicureum.brunch</td>
+          <td>Carmen: WP → Ajustes → Instagram Feed → Connect an Instagram Account</td>
         </tr>
         <tr>
-          <td><strong>Email de contacto oficial</strong></td>
-          <td>Epicureum</td>
-          <td>Para el formulario de ejercicio de derechos RGPD. Gigi ya tiene hola@gigibrunch.es.</td>
+          <td><strong>Gigi</strong></td>
+          <td>@gigibrunch</td>
+          <td>Carmen: WP → Ajustes → Instagram Feed → Connect an Instagram Account</td>
         </tr>
         <tr>
-          <td><strong>¿Mismo titular para Epicureum y Gigi o entidades distintas?</strong></td>
-          <td>Epicureum · Gigi</td>
-          <td>Determina si se pueden compartir los textos legales o hay que redactar versiones independientes.</td>
-        </tr>
-        <tr>
-          <td><strong>Confirmación: desactivar The SEO Framework en Gigi</strong></td>
-          <td>Gigi</td>
-          <td>Resolver el conflicto de doble plugin SEO. Sin confirmación no se toca.</td>
-        </tr>
-        <tr>
-          <td><strong>Contenido del footer de Gigi</strong></td>
-          <td>Gigi</td>
-          <td>Dirección, horario, teléfono, redes sociales, enlaces legales — qué incluir y en qué orden.</td>
-        </tr>
-        <tr>
-          <td><strong>Destino de botones Blog / Nosotros / Contacto en Gigi</strong></td>
-          <td>Gigi</td>
-          <td>¿Redirigen a una sección de la home, a WhatsApp, se eliminan del menú?</td>
+          <td><strong>Solasta</strong></td>
+          <td>@solastacatering</td>
+          <td>Carmen: WP → Ajustes → Instagram Feed → Connect an Instagram Account</td>
         </tr>
       </tbody>
     </table>

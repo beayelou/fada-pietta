@@ -17,7 +17,6 @@
       margin: 0 auto;
     }
 
-    /* HEADER */
     header {
       border-bottom: 2px solid #1a1a1a;
       padding-bottom: 20px;
@@ -49,10 +48,7 @@
       font-size: 12px;
     }
 
-    /* SECTION */
-    section {
-      margin-bottom: 36px;
-    }
+    section { margin-bottom: 36px; }
     section h2 {
       font-size: 10px;
       font-weight: normal;
@@ -64,7 +60,6 @@
       margin-bottom: 16px;
     }
 
-    /* CARDS */
     .card {
       border-left: 3px solid #1a1a1a;
       padding: 12px 16px;
@@ -73,7 +68,6 @@
     }
     .card.done   { border-color: #2d6a4f; background: #f0f7f4; }
     .card.active { border-color: #b5451b; background: #fdf5f2; }
-    .card.next   { border-color: #c9a84c; background: #fdf9ee; }
     .card.block  { border-color: #999;    background: #f5f5f5; }
 
     .card .tag {
@@ -85,26 +79,12 @@
     }
     .card.done   .tag { color: #2d6a4f; }
     .card.active .tag { color: #b5451b; }
-    .card.next   .tag { color: #c9a84c; }
     .card.block  .tag { color: #999; }
 
-    .card h3 {
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-    .card p {
-      font-size: 12px;
-      color: #444;
-      line-height: 1.5;
-    }
-    .card .date {
-      font-size: 10px;
-      color: #888;
-      margin-top: 6px;
-    }
+    .card h3 { font-size: 13px; font-weight: bold; margin-bottom: 4px; }
+    .card p  { font-size: 12px; color: #444; line-height: 1.5; }
+    .card .date { font-size: 10px; color: #888; margin-top: 6px; }
 
-    /* PENDIENTE TABLE */
     .pending-list {
       width: 100%;
       border-collapse: collapse;
@@ -144,13 +124,13 @@
       margin-top: 4px;
     }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid #e0e0e0;
       margin-top: 40px;
       padding-top: 16px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-size: 10px;
       color: #aaa;
     }
@@ -168,80 +148,77 @@
       <img src="../assets/logo.webp" alt="Pietta" style="height:280px; display:inline-block; margin-top:-95px;">
     </div>
     <div style="display:flex; justify-content:space-between; align-items:flex-end;">
-      <p style="font-size:11px; color:#666; letter-spacing:0.02em;">Ficha de seguimiento web · YELOU Ocean</p>
+      <p style="font-size:11px; color:#666; letter-spacing:0.02em;">Ficha de seguimiento web · YELOU Ocean · Abril 2026</p>
       <p style="font-size:11px; color:#666; text-align:right; line-height:1.6;">pietta.es<br>@pietta.ristorante</p>
     </div>
   </header>
 
-  <!-- TRABAJO REALIZADO -->
   <section>
     <h2>Trabajo realizado</h2>
 
     <div class="card done">
       <div class="tag">Completado</div>
+      <h3>Auditoría técnica + limpieza de plugins</h3>
+      <p>Backup completo realizado con UpdraftPlus. Actualizados 7 plugins de bajo riesgo (Antispam Bee, Redirection, HappyFiles Pro, Site Kit, UpdraftPlus, Smash Balloon, One Time Login). Schema Pro eliminado — su función de schema de restaurante está cubierta por The SEO Framework. Tipografía Saigu eliminada del menú desplegable.</p>
+      <div class="date">27–28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
       <h3>Pizza y pasta del mes — Mayo 2026</h3>
-      <p>Creados 4 borradores (ES + EN) en el CPT Menú: Pizza La Pecorara y Carbonara al Tartufo. Copy, ingredientes, intros y precio (16€) listos. Pendiente asignar imagen destacada desde el admin antes de publicar.</p>
+      <p>Creados 4 borradores en WordPress (ES + EN): <strong>Pizza La Pecorara</strong> y <strong>Carbonara al Tartufo</strong>. Copy, ingredientes, intros y precio (16€) listos. Alérgenos incluidos: La Pecorara (gluten, lácteos, frutos secos) · Carbonara al Tartufo (gluten, huevos, lácteos). Pendiente: asignar imagen destacada antes de publicar el 1 de mayo.</p>
       <div class="date">27 abr 2026 · Publicar el 1 de mayo</div>
     </div>
 
     <div class="card done">
       <div class="tag">Completado</div>
-      <h3>Tipografía Saigu eliminada del menú desplegable</h3>
-      <p>Corrección visual aplicada directamente. Menú desplegable ahora con tipografía coherente con el resto del sitio.</p>
-      <div class="date">27 abr 2026</div>
+      <h3>Sección recomendados home — actualizada</h3>
+      <p>La sección de 4 platos destacados en la home se rota por fecha. Se ha activado <strong>Male Lingue con Nutella</strong> como postre destacado y <strong>Arancini Pietta</strong> como cuarto plato, desplazando el panettone del bloque visible. El panettone sigue publicado en carta sin cambios.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Páginas legales — datos reales introducidos</h3>
+      <p>Aviso legal, Política de privacidad y Política de cookies actualizadas con los datos fiscales reales: <strong>PIETTA RESTAURACION SOCIEDAD LIMITADA · CIF B16457798 · C. José Manuel Jiménez Díez (Lolo el Payaso), 2, 18007 Granada</strong>. Pendiente únicamente el email de contacto oficial para publicar las tres páginas.</p>
+      <div class="date">28 abr 2026</div>
     </div>
 
     <div class="card done">
       <div class="tag">Completado</div>
       <h3>Smash Balloon Instagram Feed instalado</h3>
-      <p>Plugin instalado y activado en WordPress. Pendiente conectar la cuenta @pietta.ristorante vía OAuth para completar la integración.</p>
+      <p>Plugin v6.10.1 instalado y activado. Pendiente conectar la cuenta @pietta.ristorante vía OAuth para mostrar el feed en la web.</p>
       <div class="date">27 abr 2026</div>
-    </div>
-
-    <div class="card done">
-      <div class="tag">Completado</div>
-      <h3>Copia de seguridad completa</h3>
-      <p>Backup de archivos y base de datos realizado via UpdraftPlus antes de cualquier actualización de plugins.</p>
-      <div class="date">28 abr 2026</div>
-    </div>
-
-    <div class="card done">
-      <div class="tag">Completado</div>
-      <h3>Actualización de plugins (bajo riesgo)</h3>
-      <p>Actualizados: Antispam Bee, Redirection, HappyFiles Pro, Site Kit by Google, UpdraftPlus, Smash Balloon Instagram Feed, One Time Login.</p>
-      <div class="date">28 abr 2026</div>
-    </div>
-
-    <div class="card done">
-      <div class="tag">Completado</div>
-      <h3>Schema Pro eliminado</h3>
-      <p>Plugin desactivado y eliminado. Su función (schema de restaurante) está cubierta por The SEO Framework, que ya está activo y configurado.</p>
-      <div class="date">28 abr 2026</div>
     </div>
 
   </section>
 
-  <!-- EN PROGRESO -->
   <section>
     <h2>En progreso</h2>
 
     <div class="card active">
-      <div class="tag">En progreso</div>
+      <div class="tag">En progreso · Pendiente publicar</div>
       <h3>Pizza y pasta del mes — Mayo 2026</h3>
-      <p>Borradores creados y revisados. Falta: actualizar el bloque de la home con los nuevos platos.</p>
+      <p>Borradores creados y revisados. El 1 de mayo: publicar Pizza La Pecorara y Carbonara al Tartufo, y pasar simultáneamente a borrador Paccheri al Ragù y Pizza Cacio e Pepe (platos de abril).</p>
       <div class="date">Publicar: 1 de mayo 2026</div>
     </div>
 
-    <div class="card active">
-      <div class="tag">En progreso · Bloqueado</div>
+    <div class="card block">
+      <div class="tag">Bloqueado · Pendiente email</div>
+      <h3>Páginas legales</h3>
+      <p>Todo el contenido está listo. En cuanto se confirme el email de contacto oficial de Pietta, se publican las tres páginas.</p>
+      <div class="date">Acción: Pietta confirma email → publicación inmediata</div>
+    </div>
+
+    <div class="card block">
+      <div class="tag">Bloqueado · Pendiente conexión OAuth</div>
       <h3>Feed de Instagram en home</h3>
-      <p>Plugin instalado. Bloqueado hasta conectar la cuenta @pietta.ristorante. La chica de redes sociales de Pietta tiene que autorizar la conexión vía Facebook Business Manager en el panel WP (1 paso, 2 minutos).</p>
-      <div class="date">Cita: 28 abr 2026</div>
+      <p>Plugin instalado. Carmen (redes sociales) tiene que autorizar la conexión en WP → Ajustes → Instagram Feed → Connect an Instagram Account. Es un paso, menos de 2 minutos.</p>
+      <div class="date">Tras conexión: se configura layout y se inserta en la home con Bricks</div>
     </div>
 
   </section>
 
-  <!-- PRÓXIMOS PASOS -->
   <section>
     <h2>Próximos pasos</h2>
 
@@ -256,37 +233,48 @@
       <tbody>
         <tr>
           <td>
-            <strong>Páginas legales</strong><br>
-            <span class="bloqueado">Aviso legal, Política de privacidad y Cookies están en lorem ipsum.</span>
+            <strong>Publicar páginas legales</strong><br>
+            <span class="bloqueado">Solo falta el email de contacto oficial.</span>
           </td>
           <td><span class="prio alta">Alta</span></td>
-          <td>Pietta facilita datos: razón social, NIF, domicilio, gestoría si aplica. Con eso se redactan y publican.</td>
+          <td>Pietta facilita el email → se completa y se publican las 3 páginas.</td>
         </tr>
         <tr>
           <td>
-            <strong>Feed IG → configuración + home</strong><br>
+            <strong>1 mayo: publicar platos del mes</strong><br>
+            <span class="bloqueado">Borradores listos. Añadir imagen destacada antes de publicar.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Asignar imagen a cada plato en WP → publicar Pizza La Pecorara y Carbonara al Tartufo → pasar Paccheri al Ragù y Pizza Cacio e Pepe a borrador.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Feed IG → conectar + configurar</strong><br>
             <span class="bloqueado">Bloqueado hasta conexión OAuth.</span>
           </td>
           <td><span class="prio alta">Alta</span></td>
-          <td>Cuenta conectada por la chica de redes. Después se configura layout y se inserta en Bricks.</td>
-        </tr>
-        <tr>
-          <td><strong>Bloque home — Pizza y pasta del mes</strong></td>
-          <td><span class="prio alta">Alta</span></td>
-          <td>Actualizar bloque estático en Bricks con nuevos platos de mayo (requiere editor Bricks).</td>
-        </tr>
-        <tr>
-          <td><strong>Platos de abril → borrador</strong></td>
-          <td><span class="prio alta">Alta</span></td>
-          <td>El 1 de mayo, al publicar los platos de mayo, pasar Cacio e Pepe y Paccheri al Ragù a borrador simultáneamente.</td>
+          <td>Carmen conecta @pietta.ristorante en WP. Después se configura layout y se inserta en Bricks.</td>
         </tr>
         <tr>
           <td>
-            <strong>Actualización de plugins (requieren precaución)</strong><br>
+            <strong>Alérgenos (prioritario mayo)</strong><br>
+            <span class="bloqueado">Incluir en todos los platos de la carta.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Gennaro / Pietta facilita la lista de alérgenos por plato. Se define el formato y se actualiza la carta.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Actualización de plugins (precaución)</strong><br>
             <span class="bloqueado">ACF PRO, Polylang Pro, The SEO Framework, ASE Pro, WPCodeBox, Automatic.css, BricksExtras, Frames.</span>
           </td>
           <td><span class="prio media">Media</span></td>
-          <td>Hacer backup previo y actualizar uno a uno verificando que el diseño y las traducciones funcionan correctamente. Revisar en próxima sesión.</td>
+          <td>Backup previo + actualizar uno a uno verificando diseño y traducciones. Próxima sesión de mantenimiento.</td>
+        </tr>
+        <tr>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Pietta invita al agente en GA4 y GSC para informes mensuales con datos reales.</td>
         </tr>
       </tbody>
     </table>
@@ -294,7 +282,7 @@
 
   <footer>
     <span>Pietta · pietta.es</span>
-    <span>Elaborado por YELOU Ocean · bea@yelouocean.com</span>
+    <span>Elaborado por YELOU Ocean</span>
     <img src="../assets/YELOU_BLACK_Mesa de trabajo 1.png" alt="YELOU Ocean" style="height:20px;">
   </footer>
 
