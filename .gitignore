@@ -1,0 +1,33 @@
+# Credenciales — NUNCA versionar
+credenciales.md
+**/credenciales.md
+
+# Datos brutos de analytics (exports manuales)
+*.csv
+**/analytics-raw/
+
+# Claude Code
+.claude/
+
+# VS Code / editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Archivos temporales
+*.tmp
+*.bak
+~*

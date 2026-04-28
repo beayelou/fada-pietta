@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento web — Burbu · Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; font-size: 13px; color: #1a1a1a; background: #fff; padding: 48px 56px; max-width: 820px; margin: 0 auto; }
+    header { border-bottom: 2px solid #1a1a1a; padding-bottom: 20px; margin-bottom: 32px; }
+    header .brand h1 { font-size: 22px; font-weight: normal; letter-spacing: 0.04em; text-transform: uppercase; }
+    header .brand p { font-size: 11px; color: #666; margin-top: 4px; letter-spacing: 0.02em; }
+    section { margin-bottom: 36px; }
+    section h2 { font-size: 10px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.12em; color: #888; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; margin-bottom: 16px; }
+    .card { border-left: 3px solid #1a1a1a; padding: 12px 16px; margin-bottom: 12px; background: #fafafa; }
+    .card.done   { border-color: #2d6a4f; background: #f0f7f4; }
+    .card.active { border-color: #b5451b; background: #fdf5f2; }
+    .card.next   { border-color: #c9a84c; background: #fdf9ee; }
+    .card.block  { border-color: #999;    background: #f5f5f5; }
+    .card .tag { font-size: 9px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+    .card.done   .tag { color: #2d6a4f; }
+    .card.active .tag { color: #b5451b; }
+    .card.block  .tag { color: #999; }
+    .card h3 { font-size: 13px; font-weight: bold; margin-bottom: 4px; }
+    .card p { font-size: 12px; color: #444; line-height: 1.5; }
+    .card .date { font-size: 10px; color: #888; margin-top: 6px; }
+    .pending-list { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .pending-list th { text-align: left; font-size: 10px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.08em; color: #888; padding: 6px 8px; border-bottom: 1px solid #e0e0e0; }
+    .pending-list td { padding: 9px 8px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    .prio { display: inline-block; font-size: 9px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 7px; border-radius: 2px; }
+    .prio.alta  { background: #fde8e0; color: #b5451b; }
+    .prio.media { background: #fdf3d6; color: #9a7200; }
+    .prio.baja  { background: #e8f4ec; color: #2d6a4f; }
+    .bloqueado { font-size: 10px; color: #999; margin-top: 4px; }
+    footer { border-top: 1px solid #e0e0e0; margin-top: 40px; padding-top: 16px; display: flex; justify-content: space-between; font-size: 10px; color: #aaa; }
+    @media print { body { padding: 32px 40px; } .card { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+      <div class="brand">
+        <h1>Burbu Sushi &amp; Fusión</h1>
+        <p>Ficha de seguimiento web · YELOU Ocean · Abril 2026</p>
+      </div>
+      <p style="font-size:11px; color:#666; text-align:right; line-height:1.6;">burbu.es<br>@burbu.sushi</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Trabajo realizado</h2>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Auditoría completa de plugins</h3>
+      <p>14 plugins activos revisados. Todos actualizados y sin conflictos. Stack confirmado: Bricks + Rank Math SEO + LiteSpeed Cache. Presencia de Schema Pro activo junto a Rank Math — posible redundancia de markup, pendiente revisar.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Smash Balloon Instagram Feed instalado</h3>
+      <p>Plugin v6.10.1 instalado y activado. Pendiente autorizar la cuenta @burbu.sushi vía Facebook Business Manager para completar la integración y mostrar el feed en la home.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Verificación páginas legales</h3>
+      <p>Estado: correcto. Las tres páginas legales obligatorias están publicadas y accesibles: /aviso-legal/, /cookies/, /privacidad/. Sin acción necesaria.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>En progreso</h2>
+
+    <div class="card active">
+      <div class="tag">En progreso · Bloqueado</div>
+      <h3>Feed de Instagram en home</h3>
+      <p>Plugin instalado. Bloqueado hasta conectar la cuenta @burbu.sushi vía OAuth en Facebook Business Manager. Una vez conectado, se inserta el shortcode en la home con Bricks (grid 3 columnas, 9 posts).</p>
+      <div class="date">Paso Bea: WP → Ajustes → Instagram Feed → Connect an Instagram Account</div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Próximos pasos</h2>
+
+    <table class="pending-list">
+      <thead>
+        <tr>
+          <th style="width:42%">Tarea</th>
+          <th style="width:15%">Prioridad</th>
+          <th>Qué se necesita</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Autorizar feed IG + insertar en home</strong><br>
+            <span class="bloqueado">Bloqueado: requiere OAuth con @burbu.sushi.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Bea o responsable de redes conecta la cuenta en WP. Después se configura y se inserta en Bricks.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Auditoría SEO — páginas clave</strong><br>
+            <span class="bloqueado">Meta titles, descriptions, alt texts.</span>
+          </td>
+          <td><span class="prio media">Media</span></td>
+          <td>Revisión autónoma en próxima sesión.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Verificar estructura Polylang</strong><br>
+            <span class="bloqueado">Tiene /home-english/ pero no hay clara arquitectura multilingüe.</span>
+          </td>
+          <td><span class="prio media">Media</span></td>
+          <td>Revisión de configuración Polylang. Confirmar si la versión EN está activa y bien estructurada.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Revisar redundancia Schema Pro + Rank Math</strong>
+          </td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Revisar si Schema Pro está generando markup duplicado junto al de Rank Math. Potencial desactivación de uno.</td>
+        </tr>
+        <tr>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Bea invita al agente como usuario de lectura en GA4 y GSC para informes mensuales automatizados.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <span>Burbu · burbu.es</span>
+    <span>Elaborado por YELOU Ocean</span>
+  </footer>
+
+</body>
+</html>

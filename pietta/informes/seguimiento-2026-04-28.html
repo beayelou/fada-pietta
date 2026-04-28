@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento web — Pietta · Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 48px 56px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 2px solid #1a1a1a;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    header .brand h1 {
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    header .brand p {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+      letter-spacing: 0.02em;
+    }
+    header .meta {
+      text-align: right;
+      font-size: 11px;
+      color: #666;
+      line-height: 1.6;
+    }
+    header .meta strong {
+      color: #1a1a1a;
+      font-size: 12px;
+    }
+
+    /* SECTION */
+    section {
+      margin-bottom: 36px;
+    }
+    section h2 {
+      font-size: 10px;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #888;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* CARDS */
+    .card {
+      border-left: 3px solid #1a1a1a;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      background: #fafafa;
+    }
+    .card.done   { border-color: #2d6a4f; background: #f0f7f4; }
+    .card.active { border-color: #b5451b; background: #fdf5f2; }
+    .card.next   { border-color: #c9a84c; background: #fdf9ee; }
+    .card.block  { border-color: #999;    background: #f5f5f5; }
+
+    .card .tag {
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+    .card.done   .tag { color: #2d6a4f; }
+    .card.active .tag { color: #b5451b; }
+    .card.next   .tag { color: #c9a84c; }
+    .card.block  .tag { color: #999; }
+
+    .card h3 {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .card p {
+      font-size: 12px;
+      color: #444;
+      line-height: 1.5;
+    }
+    .card .date {
+      font-size: 10px;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    /* PENDIENTE TABLE */
+    .pending-list {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .pending-list th {
+      text-align: left;
+      font-size: 10px;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      padding: 6px 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .pending-list td {
+      padding: 9px 8px;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: top;
+    }
+    .prio {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+    .prio.alta   { background: #fde8e0; color: #b5451b; }
+    .prio.media  { background: #fdf3d6; color: #9a7200; }
+    .prio.baja   { background: #e8f4ec; color: #2d6a4f; }
+
+    .bloqueado {
+      font-size: 10px;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #e0e0e0;
+      margin-top: 40px;
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: #aaa;
+    }
+
+    @media print {
+      body { padding: 32px 40px; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <header style="display:block;">
+    <div style="text-align:center; height:90px; overflow:hidden; margin-bottom:16px;">
+      <img src="../assets/logo.webp" alt="Pietta" style="height:280px; display:inline-block; margin-top:-95px;">
+    </div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+      <p style="font-size:11px; color:#666; letter-spacing:0.02em;">Ficha de seguimiento web · YELOU Ocean</p>
+      <p style="font-size:11px; color:#666; text-align:right; line-height:1.6;">pietta.es<br>@pietta.ristorante</p>
+    </div>
+  </header>
+
+  <!-- TRABAJO REALIZADO -->
+  <section>
+    <h2>Trabajo realizado</h2>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Pizza y pasta del mes — Mayo 2026</h3>
+      <p>Creados 4 borradores (ES + EN) en el CPT Menú: Pizza La Pecorara y Carbonara al Tartufo. Copy, ingredientes, intros y precio (16€) listos. Pendiente asignar imagen destacada desde el admin antes de publicar.</p>
+      <div class="date">27 abr 2026 · Publicar el 1 de mayo</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Tipografía Saigu eliminada del menú desplegable</h3>
+      <p>Corrección visual aplicada directamente. Menú desplegable ahora con tipografía coherente con el resto del sitio.</p>
+      <div class="date">27 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Smash Balloon Instagram Feed instalado</h3>
+      <p>Plugin instalado y activado en WordPress. Pendiente conectar la cuenta @pietta.ristorante vía OAuth para completar la integración.</p>
+      <div class="date">27 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Copia de seguridad completa</h3>
+      <p>Backup de archivos y base de datos realizado via UpdraftPlus antes de cualquier actualización de plugins.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Actualización de plugins (bajo riesgo)</h3>
+      <p>Actualizados: Antispam Bee, Redirection, HappyFiles Pro, Site Kit by Google, UpdraftPlus, Smash Balloon Instagram Feed, One Time Login.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Schema Pro eliminado</h3>
+      <p>Plugin desactivado y eliminado. Su función (schema de restaurante) está cubierta por The SEO Framework, que ya está activo y configurado.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+  </section>
+
+  <!-- EN PROGRESO -->
+  <section>
+    <h2>En progreso</h2>
+
+    <div class="card active">
+      <div class="tag">En progreso</div>
+      <h3>Pizza y pasta del mes — Mayo 2026</h3>
+      <p>Borradores creados y revisados. Falta: actualizar el bloque de la home con los nuevos platos.</p>
+      <div class="date">Publicar: 1 de mayo 2026</div>
+    </div>
+
+    <div class="card active">
+      <div class="tag">En progreso · Bloqueado</div>
+      <h3>Feed de Instagram en home</h3>
+      <p>Plugin instalado. Bloqueado hasta conectar la cuenta @pietta.ristorante. La chica de redes sociales de Pietta tiene que autorizar la conexión vía Facebook Business Manager en el panel WP (1 paso, 2 minutos).</p>
+      <div class="date">Cita: 28 abr 2026</div>
+    </div>
+
+  </section>
+
+  <!-- PRÓXIMOS PASOS -->
+  <section>
+    <h2>Próximos pasos</h2>
+
+    <table class="pending-list">
+      <thead>
+        <tr>
+          <th style="width:42%">Tarea</th>
+          <th style="width:15%">Prioridad</th>
+          <th>Qué se necesita</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Páginas legales</strong><br>
+            <span class="bloqueado">Aviso legal, Política de privacidad y Cookies están en lorem ipsum.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Pietta facilita datos: razón social, NIF, domicilio, gestoría si aplica. Con eso se redactan y publican.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Feed IG → configuración + home</strong><br>
+            <span class="bloqueado">Bloqueado hasta conexión OAuth.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Cuenta conectada por la chica de redes. Después se configura layout y se inserta en Bricks.</td>
+        </tr>
+        <tr>
+          <td><strong>Bloque home — Pizza y pasta del mes</strong></td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Actualizar bloque estático en Bricks con nuevos platos de mayo (requiere editor Bricks).</td>
+        </tr>
+        <tr>
+          <td><strong>Platos de abril → borrador</strong></td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>El 1 de mayo, al publicar los platos de mayo, pasar Cacio e Pepe y Paccheri al Ragù a borrador simultáneamente.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Actualización de plugins (requieren precaución)</strong><br>
+            <span class="bloqueado">ACF PRO, Polylang Pro, The SEO Framework, ASE Pro, WPCodeBox, Automatic.css, BricksExtras, Frames.</span>
+          </td>
+          <td><span class="prio media">Media</span></td>
+          <td>Hacer backup previo y actualizar uno a uno verificando que el diseño y las traducciones funcionan correctamente. Revisar en próxima sesión.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <span>Pietta · pietta.es</span>
+    <span>Elaborado por YELOU Ocean · bea@yelouocean.com</span>
+    <img src="../assets/YELOU_BLACK_Mesa de trabajo 1.png" alt="YELOU Ocean" style="height:20px;">
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento web — Solasta · Abril 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; font-size: 13px; color: #1a1a1a; background: #fff; padding: 48px 56px; max-width: 820px; margin: 0 auto; }
+    header { border-bottom: 2px solid #1a1a1a; padding-bottom: 20px; margin-bottom: 32px; }
+    header .brand h1 { font-size: 22px; font-weight: normal; letter-spacing: 0.04em; text-transform: uppercase; }
+    header .brand p { font-size: 11px; color: #666; margin-top: 4px; letter-spacing: 0.02em; }
+    section { margin-bottom: 36px; }
+    section h2 { font-size: 10px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.12em; color: #888; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; margin-bottom: 16px; }
+    .card { border-left: 3px solid #1a1a1a; padding: 12px 16px; margin-bottom: 12px; background: #fafafa; }
+    .card.done   { border-color: #2d6a4f; background: #f0f7f4; }
+    .card.active { border-color: #b5451b; background: #fdf5f2; }
+    .card.block  { border-color: #999;    background: #f5f5f5; }
+    .card .tag { font-size: 9px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+    .card.done   .tag { color: #2d6a4f; }
+    .card.active .tag { color: #b5451b; }
+    .card.block  .tag { color: #999; }
+    .card h3 { font-size: 13px; font-weight: bold; margin-bottom: 4px; }
+    .card p { font-size: 12px; color: #444; line-height: 1.5; }
+    .card .date { font-size: 10px; color: #888; margin-top: 6px; }
+    .pending-list { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .pending-list th { text-align: left; font-size: 10px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.08em; color: #888; padding: 6px 8px; border-bottom: 1px solid #e0e0e0; }
+    .pending-list td { padding: 9px 8px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    .prio { display: inline-block; font-size: 9px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 7px; border-radius: 2px; }
+    .prio.alta  { background: #fde8e0; color: #b5451b; }
+    .prio.media { background: #fdf3d6; color: #9a7200; }
+    .prio.baja  { background: #e8f4ec; color: #2d6a4f; }
+    .bloqueado { font-size: 10px; color: #999; margin-top: 4px; }
+    footer { border-top: 1px solid #e0e0e0; margin-top: 40px; padding-top: 16px; display: flex; justify-content: space-between; font-size: 10px; color: #aaa; }
+    @media print { body { padding: 32px 40px; } .card { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+      <div class="brand">
+        <h1>Solasta Catering &amp; Eventos</h1>
+        <p>Ficha de seguimiento web · YELOU Ocean · Abril 2026</p>
+      </div>
+      <p style="font-size:11px; color:#666; text-align:right; line-height:1.6;">solastacatering.es<br>@solastacatering</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Trabajo realizado</h2>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Auditoría completa de plugins</h3>
+      <p>17 plugins activos (1 inactivo: Hostinger Easy Onboarding). Stack confirmado: Elementor + Elementor Pro + Rank Math SEO + LiteSpeed Cache. Hosting en Hostinger. Sin incidencias técnicas críticas. Web accesible — el plugin Maintenance activo no está bloqueando el acceso público.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Smash Balloon Instagram Feed instalado</h3>
+      <p>Plugin v6.10.1 instalado y activado. Pendiente autorizar @solastacatering vía Facebook Business Manager.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Verificación páginas legales</h3>
+      <p>Estado: correcto. Las tres páginas obligatorias están publicadas: /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/. Sin acción necesaria.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+    <div class="card done">
+      <div class="tag">Completado</div>
+      <h3>Verificación blog y post demo</h3>
+      <p>Blog activo con 17 artículos publicados (julio 2025 – diciembre 2025). El post demo de WordPress mencionado en auditoría anterior ya no existe — fue eliminado previamente. Blog en buen estado pero sin publicaciones desde diciembre 2025.</p>
+      <div class="date">28 abr 2026</div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>En progreso</h2>
+
+    <div class="card active">
+      <div class="tag">En progreso · Bloqueado</div>
+      <h3>Feed de Instagram en home</h3>
+      <p>Plugin instalado. Bloqueado hasta conectar @solastacatering vía OAuth en Facebook Business Manager. La temporada de bodas (primavera) hace especialmente relevante activar el feed de social proof ahora.</p>
+      <div class="date">Paso Bea: WP → Ajustes → Instagram Feed → Connect an Instagram Account</div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Próximos pasos</h2>
+
+    <table class="pending-list">
+      <thead>
+        <tr>
+          <th style="width:42%">Tarea</th>
+          <th style="width:15%">Prioridad</th>
+          <th>Qué se necesita</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Autorizar feed IG + insertar en home y galería</strong><br>
+            <span class="bloqueado">Bloqueado: requiere OAuth con @solastacatering.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Bea conecta la cuenta en WP. Después se inserta en home y/o en página de galería con Elementor.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Retomar blog mensual</strong><br>
+            <span class="bloqueado">Sin publicaciones desde diciembre 2025 — 4 meses de pausa.</span>
+          </td>
+          <td><span class="prio alta">Alta</span></td>
+          <td>Propuesta de temáticas para mayo–junio (temporada bodas): artículo sobre catering bodas primavera en Granada. Se redacta y presenta como borrador.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Revisar draft "Elementor #766"</strong><br>
+            <span class="bloqueado">Post sin título en estado borrador desde noviembre 2025.</span>
+          </td>
+          <td><span class="prio media">Media</span></td>
+          <td>Bea revisa qué es. Si está abandonado, eliminar para mantener limpio el panel.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Revisar /privacy-policy/ en inglés</strong><br>
+            <span class="bloqueado">Draft en inglés — posible duplicado no publicado.</span>
+          </td>
+          <td><span class="prio media">Media</span></td>
+          <td>Si la web no tiene versión EN, eliminar. Si hay intención de añadirla, planificar.</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Desactivar Hostinger Easy Onboarding</strong><br>
+            <span class="bloqueado">Plugin inactivo de Hostinger — residual de la instalación inicial.</span>
+          </td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Desactivar y eliminar en próxima sesión de mantenimiento.</td>
+        </tr>
+        <tr>
+          <td><strong>Accesos directos GA4 + Search Console</strong></td>
+          <td><span class="prio baja">Baja</span></td>
+          <td>Bea invita al agente en GA4 y GSC para informes mensuales con datos reales.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <span>Solasta · solastacatering.es</span>
+    <span>Elaborado por YELOU Ocean</span>
+  </footer>
+
+</body>
+</html>

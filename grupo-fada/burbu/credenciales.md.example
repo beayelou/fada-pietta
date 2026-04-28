@@ -1,0 +1,32 @@
+# Credenciales — Burbu
+
+⚠️ **Este archivo NUNCA se sube al repositorio.** Está en `.gitignore`.
+Duplica este archivo como `credenciales.md` y rellena los datos.
+
+---
+
+## WordPress
+
+- **URL admin:** 
+- **Usuario:**
+- **Application Password:** (NO la contraseña normal — se genera en Usuarios → Perfil → Contraseñas de aplicación)
+- **Rol:** Administrador
+
+## Stack técnico
+
+- **Builder:** [Elementor / Bricks]
+- **Plugin SEO:** [Rank Math / The SEO Framework]
+- **Plugin multilingüe (si aplica):**
+- **Plugin Instagram feed (cuando se implemente):**
+
+## Analytics
+
+- **GA4 Property ID:**
+- **GA4 Measurement ID:**
+- **Search Console Property:**
+
+## Otros
+
+- **Google Business Profile:** [URL al perfil]
+- **Hosting:** [proveedor]
+- **Registrador de dominio:** [proveedor]
