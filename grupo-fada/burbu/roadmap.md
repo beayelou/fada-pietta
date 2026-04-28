@@ -21,7 +21,6 @@
 - [ ] Verificar si Polylang está configurado correctamente (tiene /home-english/ pero no hay clara estructura multilingüe)
 
 ### 🟡 Media
-- [ ] Configurar accesos GA4 + Search Console directos (actualmente via Site Kit)
 - [ ] Auditoría SEO — meta titles y descriptions de todas las páginas clave
 - [ ] Verificar estado del Club VIP en web
 

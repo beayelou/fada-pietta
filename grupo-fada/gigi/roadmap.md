@@ -27,7 +27,6 @@
 ### 🟡 Media
 - [ ] Blog, Nosotros, Contacto están en privado — confirmado que se mantiene estilo landing page · los botones de navegación deben redirigir a secciones de la home o al WhatsApp (Bricks)
 - [ ] Actualizar Advanced Themer for Bricks de v2.9.1.3 a v3.2.5 (Epicureum ya tiene la versión más nueva)
-- [ ] Configurar accesos GA4 + Search Console directos
 
 ### 🟢 Baja
 - [ ] Verificar plugin multilingüe exacto (Polylang está activo — confirmar estructura ES/EN)

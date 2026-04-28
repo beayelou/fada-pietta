@@ -25,7 +25,6 @@
 
 ### 🟡 Media
 - [ ] Revisar draft "Elementor #766" — hay un borrador sin título (posible contenido abandonado)
-- [ ] Configurar accesos GA4 + Search Console directos
 - [ ] Verificar si Maintenance plugin se puede desactivar (está activo pero no bloquea el acceso — puede ser para modo administración)
 - [ ] Revisar draft /privacy-policy/ (en inglés) — duplicado de la política de privacidad en español, pendiente de determinar si es necesario
 

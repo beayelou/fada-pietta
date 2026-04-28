@@ -17,21 +17,20 @@
 
 - Pizza/pasta del mes mayo · borradores listos · pendiente: imagen destacada + ACF + bloque home · **publicar 2026-05-01**
 - Feed Instagram · Smash Balloon activo · pendiente: Carmen conecta cuenta @pietta.ristorante vía OAuth
-- Páginas legales · contenido real añadido · **pendiente: Bea confirma email de contacto oficial → publicar**
+- Páginas legales · publicadas · **pendiente: Pietta confirma email de contacto oficial → actualizar**
 
 ---
 
 ## Pendiente
 
 ### 🔴 Alta
-- [ ] Publicar páginas legales · falta email de contacto oficial → Bea confirma → se publican
+- [ ] Actualizar email en páginas legales · páginas publicadas · Pietta confirma email → se actualiza el contenido
 - [ ] Feed Instagram · Carmen conecta OAuth · después configurar layout e insertar en home
 - [ ] **Alérgenos (prioritario mayo)** · incluir alérgenos en todos los platos de la carta · pendiente definir formato y platos afectados con Bea/Gennaro
 
 ### 🟡 Media
 - [ ] Postre recomendado: Male Lingue con Nutella activo · Bea actualiza copy e imagen en el post si lo considera necesario
 - [ ] Publicar platos del mes de mayo el 1 de mayo (Carbonara al Tartufo + Pizza La Pecorara) · recordar pasar Paccheri al Ragù y Pizza Cacio e Pepe a borrador
-- [ ] Configurar accesos GA4 + Search Console directos
 
 ### 🟢 Baja
 - [ ] Auditoría SEO inicial

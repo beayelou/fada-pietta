@@ -21,9 +21,6 @@
 - [ ] **[CARMEN] Autorizar Instagram feed** via Facebook Business Manager → insertar shortcode en home (Bricks)
 - [ ] Actualizar ASE Pro de v7.5.1 a v8.4.0 (desactualizado respecto a Burbu y Gigi)
 
-### 🟡 Media
-- [ ] Configurar accesos GA4 + Search Console directos
-
 ### 🟢 Baja
 - [ ] Schema Pro + Rank Math activos simultáneamente — revisar si hay duplicidad de Schema markup
 
